@@ -51,7 +51,8 @@ backup_dir = current_dir+"/backups/"
 if not os.path.isdir(backup_dir):
     os.mkdir(backup_dir)
 
-schedule.every(2).minutes.do(create_backup, save_file_path, backup_dir)
+backup_interval = input(">>>How often do you want the tool to create a new backup? Please specify the value in MINUTES\n>>> ")
+schedule.every(int(backup_interval)).minutes.do(create_backup, save_file_path, backup_dir)
 atexit.register(handle_exit)
 
 while True:
