@@ -7,6 +7,12 @@
 #venv
 project_env/
 
+#python
+__pycache__
+main.spec
+dist
+build
+
 #script output files
 save_path.txt
 backups
