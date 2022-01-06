@@ -1,0 +1,8 @@
+#system files
+.DS_Store
+
+#venv
+project_env/
+
+#save_path_location
+save_path.txt
