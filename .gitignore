@@ -1,8 +1,12 @@
 #system files
 .DS_Store
 
+#vscode
+.vscode
+
 #venv
 project_env/
 
-#save_path_location
+#script output files
 save_path.txt
+backups
